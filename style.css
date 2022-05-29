@@ -1,0 +1,46 @@
+a {
+  color:black;
+  text-decoration: none;
+}
+#active {
+  color:blue;
+}
+.saw {
+  color:gray;
+}
+
+h1 {
+  font-size:40px;
+  text-align: center;
+}
+
+a {
+  color:blue;
+}
+h1, a{
+  border:5px solid red;
+  padding:8px;
+  margin:8px;
+  display:block;
+  width:100px;
+}
+
+
+#grid{
+  border:5px solid pink;
+  display:grid;
+  grid-template-columns: 150px 1fr;
+}
+div {
+  border:5px solid gray;
+}
+div{
+  border:10px solid green;
+  font-size:60px;
+}
+@midea(min-width:800px) {
+
+  div{
+    display:none;
+  }
+}
