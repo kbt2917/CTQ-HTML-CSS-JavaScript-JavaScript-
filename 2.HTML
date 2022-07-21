@@ -4,10 +4,15 @@
   <title>탄소 동소체 - 그래핀</title>
   <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="colors.js"></script>
 </head>
 
 <body>
   <h1><a href="index.html">돌아가기</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
   <h1>그래핀의 성질</h1>
 
   <h2>그래핀의 성질</h2>
@@ -19,5 +24,16 @@
     주목받고 있기도 하다.</p>
     <a href="https://en.wikipedia.org/wiki/File:Eight_Allotropes_of_Carbon.png" target="_blank" title="네이버 지식백과-그래">자료 출처</a>
   <img src="coding.png">
+  <input type="button" value="night" onclick="
+  if(this.value === 'night') {
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    this.value = 'day';
+  } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'night';
+  }
+  ">
 </body>
 </html>

@@ -21,10 +21,15 @@
     text-align: center;
   }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="colors.js"></script>
 </head>
 
 <body>
   <h1><a href="index.html" target="_blank" style="color:red; text-decoration:underline;">탄소동소체-그래핀</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
   <ol>
     <li><a href="1.html" target="_blank" class="saw" id="active">그래핀</a></li>
     <ul>
@@ -52,5 +57,16 @@
   라고 한다.</p>
   동소체라는 용어는 같은 상태(고체,액체,기체 등)에서 같은 원소로 구성된 분자에
   국한(다양한 원소로 구성된 화합물이 아님)되어 사용된다.
+  <input type="button" value="night" onclick="
+  if(this.value === 'night') {
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    this.value = 'day';
+  } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'night';
+  }
+  ">
 </body>
 </html>
